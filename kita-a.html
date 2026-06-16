@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="הכנה רגשית-חברתית לכיתה א׳ עם נפאל מנה-להב – יועצת חינוכית, מדריכת הורים מוסמכת ומנחת קבוצות חברתיות. מסע קבוצתי לחיזוק הביטחון העצמי, רכישת כלים ליצירת חברויות והתמודדות רגשית. קריית-אונו." />
+    <meta name="theme-color" content="#FAF6F0" />
+    <link rel="canonical" href="https://nepal-parenthood.vercel.app/kita-a" />
+
+    <meta property="og:title" content="הכנה רגשית-חברתית לכיתה א׳ | נפאל מנה-להב" />
+    <meta property="og:description" content="מסע קבוצתי לילדים העולים לכיתה א׳ – חיזוק ביטחון עצמי, יצירת חברויות חדשות והתמודדות עם רגשות. קריית-אונו." />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="he_IL" />
+    <meta property="og:url" content="https://nepal-parenthood.vercel.app/kita-a" />
+    <meta property="og:image" content="https://nepal-parenthood.vercel.app/images/nepal-warmth-1.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <title>הכנה לכיתה א׳ – מסע רגשי-חברתי | נפאל מנה-להב</title>
+
+    <link rel="icon" type="image/png" href="images/nepal-logo.png" />
+    <link rel="apple-touch-icon" href="images/nepal-logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&family=Heebo:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Assistant', 'Heebo', 'system-ui', 'sans-serif'],
+                        display: ['Assistant', 'Heebo', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        cream: {
+                            50: '#FDFBF7',
+                            100: '#FAF6F0',
+                            200: '#F2EBE0',
+                            300: '#E8DECF',
+                        },
+                        sage: {
+                            50: '#F4F7F2',
+                            100: '#E8EFE2',
+                            200: '#CFDCC4',
+                            300: '#B3C5A3',
+                            400: '#94AB82',
+                            500: '#7B9569',
+                            600: '#5F7551',
+                            700: '#4D5F42',
+                            800: '#3F4D37',
+                            900: '#2F3A29',
+                        },
+                        sky: {
+                            50: '#F2F7FB',
+                            100: '#E4EFF6',
+                            200: '#CADEEB',
+                            300: '#A6C7DE',
+                            400: '#7FAAC8',
+                            500: '#5E8FB3',
+                            600: '#4A7596',
+                            700: '#3D6079',
+                        },
+                        lavender: {
+                            50: '#F6F2F9',
+                            100: '#EDE6F3',
+                            200: '#DCCBE6',
+                            300: '#C2A8D2',
+                            400: '#A88AB9',
+                            500: '#8F6CA0',
+                            600: '#735585',
+                            700: '#5B4369',
+                        },
+                        butter: {
+                            50: '#FBF6E6',
+                            100: '#F7EFD2',
+                            200: '#F1E2A8',
+                            300: '#E5CC77',
+                            400: '#D1B25A',
+                            500: '#AE9242',
+                            600: '#8A7434',
+                            700: '#6E5C2A',
+                        },
+                        blush: {
+                            50: '#FBEFE8',
+                            100: '#F6E0D3',
+                            200: '#EFC9B5',
+                            300: '#E0A289',
+                            400: '#CE8268',
+                            500: '#B26551',
+                            600: '#8E4F3F',
+                        },
+                        warm: {
+                            300: '#B8A99A',
+                            400: '#9B8B7C',
+                            500: '#7A6E60',
+                            600: '#5F564B',
+                        },
+                        charcoal: {
+                            DEFAULT: '#2D2A26',
+                            light: '#403B35',
+                            muted: '#5A544C',
+                        },
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 24px -8px rgba(95, 117, 81, 0.15)',
+                        'card': '0 8px 30px -12px rgba(45, 42, 38, 0.12)',
+                        'card-hover': '0 18px 40px -14px rgba(95, 117, 81, 0.28)',
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 5rem;
+        }
+        body {
+            font-family: 'Assistant', 'Heebo', system-ui, sans-serif;
+            background-color: #FAF6F0;
+            color: #2D2A26;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        .blob {
+            position: absolute;
+            border-radius: 9999px;
+            filter: blur(80px);
+            opacity: 0.55;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes pulse-ring {
+            0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+            70%  { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .pulse-whatsapp {
+            animation: pulse-ring 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        .pillar-card {
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+        }
+        .pillar-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+        .mobile-menu.open {
+            max-height: 420px;
+        }
+
+        .nav-scrolled {
+            background-color: rgba(250, 246, 240, 0.85);
+            backdrop-filter: saturate(160%) blur(14px);
+            -webkit-backdrop-filter: saturate(160%) blur(14px);
+            box-shadow: 0 1px 0 rgba(45, 42, 38, 0.06);
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid #7B9569;
+            outline-offset: 3px;
+            border-radius: 6px;
+        }
+
+        .hero-pattern {
+            background-image:
+                radial-gradient(circle at 18% 22%, rgba(179, 197, 163, 0.22), transparent 45%),
+                radial-gradient(circle at 82% 14%, rgba(220, 203, 230, 0.45), transparent 50%),
+                radial-gradient(circle at 50% 100%, rgba(202, 222, 235, 0.40), transparent 55%),
+                radial-gradient(circle at 30% 80%, rgba(247, 239, 210, 0.40), transparent 45%);
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+            <nav class="flex items-center justify-between h-18 py-4" aria-label="ניווט ראשי">
+                <a href="index.html#home" class="flex items-center gap-3 group">
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-white shadow-soft ring-1 ring-cream-300 overflow-hidden group-hover:ring-sage-300 transition">
+                        <img src="images/nepal-logo.png" alt="הלוגו של נפאל מנה-להב" class="w-full h-full object-cover" />
+                    </span>
+                    <span class="flex flex-col leading-tight">
+                        <span class="text-charcoal font-bold text-lg tracking-tight">נפאל מנה-להב</span>
+                        <span class="text-warm-500 text-xs font-medium">ייעוץ והדרכה למשפחה</span>
+                    </span>
+                </a>
+
+                <ul class="hidden md:flex items-center gap-1 lg:gap-2">
+                    <li><a href="index.html#home"     class="px-4 py-2 rounded-full text-charcoal-light hover:text-sage-700 hover:bg-sage-50 transition-colors font-medium">בית</a></li>
+                    <li><a href="index.html#about"    class="px-4 py-2 rounded-full text-charcoal-light hover:text-sage-700 hover:bg-sage-50 transition-colors font-medium">אודות</a></li>
+                    <li><a href="index.html#services" class="px-4 py-2 rounded-full text-charcoal-light hover:text-sage-700 hover:bg-sage-50 transition-colors font-medium">שירותים</a></li>
+                    <li><a href="index.html#contact"  class="px-4 py-2 rounded-full text-charcoal-light hover:text-sage-700 hover:bg-sage-50 transition-colors font-medium">צור קשר</a></li>
+                </ul>
+
+                <a href="#contact-kita" class="hidden md:inline-flex items-center gap-2 bg-sage-600 hover:bg-sage-700 text-white px-5 py-2.5 rounded-full font-semibold shadow-soft transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    הרשמה לקבוצה
+                </a>
+
+                <button id="menu-toggle" type="button"
+                    class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-full bg-cream-200 text-charcoal hover:bg-sage-100 transition-colors"
+                    aria-label="פתיחת תפריט"
+                    aria-controls="mobile-menu"
+                    aria-expanded="false">
+                    <svg id="icon-open"  xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+                    <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="hidden w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M6 18L18 6"/></svg>
+                </button>
+            </nav>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-cream-100/95 backdrop-blur border-t border-cream-300">
+            <ul class="px-5 py-4 space-y-1">
+                <li><a href="index.html#home"     class="block px-4 py-3 rounded-xl text-charcoal hover:bg-sage-100 hover:text-sage-700 font-medium transition-colors">בית</a></li>
+                <li><a href="index.html#about"    class="block px-4 py-3 rounded-xl text-charcoal hover:bg-sage-100 hover:text-sage-700 font-medium transition-colors">אודות</a></li>
+                <li><a href="index.html#services" class="block px-4 py-3 rounded-xl text-charcoal hover:bg-sage-100 hover:text-sage-700 font-medium transition-colors">שירותים</a></li>
+                <li><a href="index.html#contact"  class="block px-4 py-3 rounded-xl text-charcoal hover:bg-sage-100 hover:text-sage-700 font-medium transition-colors">צור קשר</a></li>
+                <li class="pt-2">
+                    <a href="#contact-kita" class="flex items-center justify-center gap-2 bg-sage-600 hover:bg-sage-700 text-white px-5 py-3 rounded-full font-semibold shadow-soft transition-colors">
+                        הרשמה לקבוצה
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ===================== HERO ===================== -->
+        <section class="relative pt-32 sm:pt-36 pb-16 sm:pb-20 overflow-hidden hero-pattern">
+            <div class="blob bg-sage-200"     style="width:380px;height:380px;top:-80px;left:-100px;"></div>
+            <div class="blob bg-lavender-200" style="width:300px;height:300px;top:40px;right:-100px;opacity:0.45;"></div>
+            <div class="blob bg-butter-200"   style="width:260px;height:260px;bottom:-80px;left:30%;opacity:0.40;"></div>
+            <div class="blob bg-sky-200"      style="width:300px;height:300px;bottom:-100px;right:-60px;opacity:0.50;"></div>
+
+            <div class="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+                <div class="max-w-3xl mx-auto text-center">
+                    <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-butter-100 text-butter-700 text-sm font-semibold mb-7 shadow-soft">
+                        <span class="w-2 h-2 rounded-full bg-butter-400"></span>
+                        קבוצה חדשה · קריית-אונו
+                    </span>
+
+                    <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-charcoal leading-[1.15] tracking-tight">
+                        עולים לכיתה א׳?
+                        <span class="block text-sage-700 mt-3">הכנה רגשית-חברתית לקראת המעבר המרגש</span>
+                    </h1>
+
+                    <p class="mt-7 text-lg sm:text-xl text-charcoal-muted leading-relaxed max-w-2xl mx-auto">
+                        המעבר לכיתה א׳ הוא <strong class="text-charcoal font-semibold">צעד ענק</strong> עבור הילדים שלכם –
+                        ועבורכם. קבוצת ההכנה מלווה את הילדים בתהליך עדין ומשמעותי, שמייצר ביטחון, חברויות וכלים שיישארו איתם הרבה אחרי תחילת השנה.
+                    </p>
+
+                    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="https://wa.me/972526969121?text=שלום%20נפאל,%20ראיתי%20את%20הפוסט%20על%20קבוצת%20ההכנה%20לכיתה%20א׳%20ואשמח%20לשמוע%20פרטים"
+                            target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1FBA59] text-white px-8 py-4 rounded-full font-semibold text-base shadow-card hover:shadow-card-hover transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.93 11.93 0 0012.04 0C5.4 0 .05 5.35.05 11.99c0 2.11.55 4.17 1.6 5.99L0 24l6.18-1.62a11.94 11.94 0 005.86 1.49h.01c6.63 0 11.99-5.35 11.99-11.99 0-3.2-1.25-6.21-3.52-8.4zM12.05 21.3h-.01a9.3 9.3 0 01-4.74-1.3l-.34-.2-3.67.96.98-3.58-.22-.37a9.3 9.3 0 01-1.43-4.83c0-5.14 4.18-9.32 9.33-9.32 2.49 0 4.83.97 6.59 2.73a9.27 9.27 0 012.73 6.6c0 5.14-4.18 9.31-9.32 9.31zm5.36-6.97c-.29-.15-1.74-.86-2.01-.96-.27-.1-.47-.15-.66.15-.2.29-.76.96-.93 1.15-.17.2-.34.22-.63.07-.29-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.03-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.49-.5-.66-.51l-.56-.01c-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.44s1.05 2.83 1.2 3.03c.15.2 2.07 3.17 5.02 4.45.7.3 1.25.48 1.68.62.71.23 1.35.2 1.85.12.56-.08 1.74-.71 1.99-1.4.24-.69.24-1.28.17-1.4-.07-.12-.27-.2-.56-.34z"/></svg>
+                            הרשמה ב-WhatsApp
+                        </a>
+                        <a href="tel:+972526969121"
+                            class="inline-flex items-center justify-center gap-2 bg-white/70 hover:bg-white text-charcoal border border-cream-300 px-8 py-4 rounded-full font-semibold text-base transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.8a2 2 0 01-.45 1.86L8.09 10.91a16 16 0 006 6l1.735-1.38a2 2 0 011.86-.45l2.8.7A2 2 0 0122 17.72V20a2 2 0 01-2 2h-1C9.82 22 2 14.18 2 5V4a1 1 0 011-1z"/></svg>
+                            <span dir="ltr">052-696-9121</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================== INVITATION ===================== -->
+        <section class="relative py-16 sm:py-20 bg-cream-100">
+            <div class="max-w-4xl mx-auto px-5 sm:px-8 lg:px-12">
+                <div class="relative bg-white rounded-4xl p-8 sm:p-12 shadow-card border border-cream-200 text-center">
+                    <div class="absolute -top-6 right-1/2 translate-x-1/2 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-sage-100 text-sage-700 shadow-soft">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"/></svg>
+                    </div>
+                    <span class="inline-block text-sage-600 font-semibold uppercase tracking-wider text-sm mb-4 mt-4">ההזמנה שלי אליכם</span>
+                    <h2 class="font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl text-charcoal leading-tight mb-6">
+                        מסע רגשי-חברתי לקראת
+                        <span class="block text-sage-700 mt-2">שנה חדשה בכיתה א׳.</span>
+                    </h2>
+                    <p class="text-lg sm:text-xl text-charcoal-muted leading-relaxed max-w-2xl mx-auto">
+                        אני מזמינה אתכם להצטרף למסע <strong class="text-charcoal font-semibold">רגשי-חברתי</strong> בו נעסוק
+                        במיומנויות חברתיות שיסייעו לילדכם בתהליך ההסתגלות ובבניית יחסים חיוביים – בקבוצה קטנה, מוגנת ומלאת משחק.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================== PILLARS ===================== -->
+        <section class="relative py-20 sm:py-24 bg-cream-50">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+
+                <div class="max-w-2xl mx-auto text-center mb-14 sm:mb-16">
+                    <span class="inline-block text-sage-600 font-semibold uppercase tracking-wider text-sm mb-4">במה נעסוק בקבוצה</span>
+                    <h2 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-charcoal leading-tight">
+                        ארבעה אבני יסוד למעבר רך.
+                    </h2>
+                    <p class="mt-5 text-lg text-charcoal-muted">
+                        כל מפגש נבנה סביב הנושאים האלה – דרך משחק, יצירה ושיח שמתאים לגיל.
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7">
+
+                    <!-- Pillar 1: Self-confidence (Sage) -->
+                    <article class="pillar-card group bg-white rounded-3xl p-7 border border-cream-200 shadow-card hover:shadow-card-hover hover:border-sage-300 relative overflow-hidden">
+                        <div class="absolute -top-10 -left-10 w-32 h-32 rounded-full bg-sage-100/70 group-hover:bg-sage-200/70 transition-colors"></div>
+                        <div class="relative">
+                            <div class="w-14 h-14 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center mb-5 group-hover:bg-sage-200 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-display font-bold text-xl text-charcoal mb-3">ביטחון עצמי ומסוגלות</h3>
+                            <p class="text-charcoal-muted leading-relaxed">
+                                חיזוק הביטחון העצמי ותחושת המסוגלות של הילד מול קבוצת השווים – להגיע לכיתה עם תחושה ש"אני יודע, אני יכול, אני שייך".
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Pillar 2: Friendship tools (Sky) -->
+                    <article class="pillar-card group bg-white rounded-3xl p-7 border border-cream-200 shadow-card hover:shadow-card-hover hover:border-sky-300 relative overflow-hidden">
+                        <div class="absolute -top-10 -left-10 w-32 h-32 rounded-full bg-sky-100/70 group-hover:bg-sky-200/70 transition-colors"></div>
+                        <div class="relative">
+                            <div class="w-14 h-14 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center mb-5 group-hover:bg-sky-200 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-3.13a4 4 0 11-8 0 4 4 0 018 0zm6 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-display font-bold text-xl text-charcoal mb-3">כלים ליצירת חברויות</h3>
+                            <p class="text-charcoal-muted leading-relaxed">
+                                רכישת כלים מעשיים ליצירת חברויות חדשות, להתנהלות חברתית נכונה ולמציאת מקום נעים ובטוח בכיתה ובהפסקות.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Pillar 3: Emotional skills (Lavender) -->
+                    <article class="pillar-card group bg-white rounded-3xl p-7 border border-cream-200 shadow-card hover:shadow-card-hover hover:border-lavender-300 relative overflow-hidden">
+                        <div class="absolute -top-10 -left-10 w-32 h-32 rounded-full bg-lavender-100/70 group-hover:bg-lavender-200/70 transition-colors"></div>
+                        <div class="relative">
+                            <div class="w-14 h-14 rounded-2xl bg-lavender-100 text-lavender-700 flex items-center justify-center mb-5 group-hover:bg-lavender-200 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-display font-bold text-xl text-charcoal mb-3">מיומנויות רגשיות</h3>
+                            <p class="text-charcoal-muted leading-relaxed">
+                                תרגול התמודדות עם תסכול, דחיית סיפוקים והבעת רגשות – כדי שהילד יוכל לפגוש את האתגרים החדשים מתוך שקט פנימי.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Pillar 4: Experiential learning (Butter) -->
+                    <article class="pillar-card group bg-white rounded-3xl p-7 border border-cream-200 shadow-card hover:shadow-card-hover hover:border-butter-300 relative overflow-hidden">
+                        <div class="absolute -top-10 -left-10 w-32 h-32 rounded-full bg-butter-100/70 group-hover:bg-butter-200/70 transition-colors"></div>
+                        <div class="relative">
+                            <div class="w-14 h-14 rounded-2xl bg-butter-100 text-butter-700 flex items-center justify-center mb-5 group-hover:bg-butter-200 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-display font-bold text-xl text-charcoal mb-3">למידה חווייתית</h3>
+                            <p class="text-charcoal-muted leading-relaxed">
+                                כל מפגש משלב משחק, יצירה ושיח בקבוצה איכותית – כדי שהלמידה תיגע, תרגש ותישאר בזיכרון.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================== DETAILS STRIP ===================== -->
+        <section class="relative py-16 sm:py-20 bg-gradient-to-b from-cream-100 via-cream-50 to-cream-100 overflow-hidden">
+            <div class="blob bg-sky-200"      style="width:280px;height:280px;top:-60px;left:-60px;opacity:0.40;"></div>
+            <div class="blob bg-lavender-200" style="width:260px;height:260px;bottom:-60px;right:-60px;opacity:0.40;"></div>
+
+            <div class="relative max-w-5xl mx-auto px-5 sm:px-8 lg:px-12">
+                <div class="grid sm:grid-cols-3 gap-5 sm:gap-6">
+
+                    <div class="bg-white rounded-3xl p-6 border border-cream-200 shadow-card flex items-start gap-4">
+                        <div class="shrink-0 w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-sm text-warm-500 font-medium">מיקום</div>
+                            <div class="text-charcoal font-semibold mt-0.5">קריית-אונו</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-6 border border-cream-200 shadow-card flex items-start gap-4">
+                        <div class="shrink-0 w-12 h-12 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-3.13a4 4 0 11-8 0 4 4 0 018 0zm6 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-sm text-warm-500 font-medium">המסגרת</div>
+                            <div class="text-charcoal font-semibold mt-0.5">קבוצה קטנה ואיכותית</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-6 border border-cream-200 shadow-card flex items-start gap-4">
+                        <div class="shrink-0 w-12 h-12 rounded-2xl bg-butter-100 text-butter-700 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-sm text-warm-500 font-medium">למי מתאים</div>
+                            <div class="text-charcoal font-semibold mt-0.5">ילדי גן חובה לקראת כיתה א׳</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================== FINAL CTA ===================== -->
+        <section id="contact-kita" class="relative py-20 sm:py-28 bg-gradient-to-b from-cream-100 to-cream-200 overflow-hidden">
+            <div class="blob bg-sage-200" style="width:340px;height:340px;top:-80px;right:-80px;opacity:0.45;"></div>
+            <div class="blob bg-lavender-200" style="width:280px;height:280px;bottom:-80px;left:-80px;opacity:0.40;"></div>
+
+            <div class="relative max-w-3xl mx-auto px-5 sm:px-8 lg:px-12 text-center">
+                <span class="inline-block text-sage-600 font-semibold uppercase tracking-wider text-sm mb-4">לפרטים נוספים והרשמה</span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-charcoal leading-tight">
+                    מקומות מוגבלים.
+                    <span class="block text-sage-700 mt-2">השאירו פרטים ואחזור אליכם.</span>
+                </h2>
+
+                <p class="mt-6 text-base sm:text-lg text-charcoal-muted leading-relaxed">
+                    נפאל מנה-להב · יועצת חינוכית · מדריכת הורים מוסמכת · מנחת קבוצות חברתיות
+                </p>
+
+                <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://wa.me/972526969121?text=שלום%20נפאל,%20ראיתי%20את%20הפוסט%20על%20קבוצת%20ההכנה%20לכיתה%20א׳%20ואשמח%20לשמוע%20פרטים"
+                        target="_blank" rel="noopener noreferrer"
+                        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1FBA59] text-white px-8 py-4 rounded-full font-semibold text-base shadow-card hover:shadow-card-hover transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.93 11.93 0 0012.04 0C5.4 0 .05 5.35.05 11.99c0 2.11.55 4.17 1.6 5.99L0 24l6.18-1.62a11.94 11.94 0 005.86 1.49h.01c6.63 0 11.99-5.35 11.99-11.99 0-3.2-1.25-6.21-3.52-8.4zM12.05 21.3h-.01a9.3 9.3 0 01-4.74-1.3l-.34-.2-3.67.96.98-3.58-.22-.37a9.3 9.3 0 01-1.43-4.83c0-5.14 4.18-9.32 9.33-9.32 2.49 0 4.83.97 6.59 2.73a9.27 9.27 0 012.73 6.6c0 5.14-4.18 9.31-9.32 9.31zm5.36-6.97c-.29-.15-1.74-.86-2.01-.96-.27-.1-.47-.15-.66.15-.2.29-.76.96-.93 1.15-.17.2-.34.22-.63.07-.29-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.03-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.49-.5-.66-.51l-.56-.01c-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.44s1.05 2.83 1.2 3.03c.15.2 2.07 3.17 5.02 4.45.7.3 1.25.48 1.68.62.71.23 1.35.2 1.85.12.56-.08 1.74-.71 1.99-1.4.24-.69.24-1.28.17-1.4-.07-.12-.27-.2-.56-.34z"/></svg>
+                        הרשמה ב-WhatsApp
+                    </a>
+                    <a href="tel:+972526969121"
+                        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-charcoal border border-cream-300 hover:border-sage-300 hover:shadow-card px-8 py-4 rounded-full font-semibold text-base transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.8a2 2 0 01-.45 1.86L8.09 10.91a16 16 0 006 6l1.735-1.38a2 2 0 011.86-.45l2.8.7A2 2 0 0122 17.72V20a2 2 0 01-2 2h-1C9.82 22 2 14.18 2 5V4a1 1 0 011-1z"/></svg>
+                        <span dir="ltr">052-696-9121</span>
+                    </a>
+                </div>
+
+                <p class="mt-8 text-sm text-warm-500">
+                    מעדיפים לקרוא קודם על שאר התחומים?
+                    <a href="index.html#services" class="text-sage-700 font-semibold hover:underline">חזרה לאתר הראשי ←</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="bg-charcoal text-cream-100">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-12">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-white overflow-hidden ring-1 ring-white/20 shadow-soft">
+                            <img src="images/nepal-logo.png" alt="הלוגו של נפאל מנה-להב" class="w-full h-full object-cover" />
+                        </span>
+                        <span class="font-bold text-lg">נפאל מנה-להב</span>
+                    </div>
+                    <p class="text-cream-200/70 text-sm leading-relaxed">
+                        ייעוץ חינוכי, הדרכת הורים, טיפול רגשי והנחיית קבוצות חברתיות לילדים – ליווי חם ומקצועי למשפחה שלכם.
+                    </p>
+                    <p class="text-cream-200/60 text-xs leading-relaxed mt-3">
+                        M.A ייעוץ חינוכי · B.Ed חינוך וחינוך מיוחד לגיל הרך · בוגרת "מחומש ההורות"
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">ניווט</h4>
+                    <ul class="space-y-2 text-cream-200/80 text-sm">
+                        <li><a href="index.html#home"     class="hover:text-sage-300 transition-colors">בית</a></li>
+                        <li><a href="index.html#about"    class="hover:text-sage-300 transition-colors">אודות</a></li>
+                        <li><a href="index.html#services" class="hover:text-sage-300 transition-colors">שירותים</a></li>
+                        <li><a href="index.html#contact"  class="hover:text-sage-300 transition-colors">צור קשר</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">פרטי קשר</h4>
+                    <ul class="space-y-2 text-cream-200/80 text-sm">
+                        <li><a href="mailto:nepal.parenthood@gmail.com" class="hover:text-sage-300 transition-colors break-all">nepal.parenthood@gmail.com</a></li>
+                        <li><a href="tel:+972526969121" class="hover:text-sage-300 transition-colors" dir="ltr">+972 52-696-9121</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-10 pt-6 border-t border-cream-200/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream-200/60">
+                <p>© <span id="year"></span> נפאל מנה-להב. כל הזכויות שמורות.</p>
+                <p>נבנה באהבה ובהקשבה.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ===================== FLOATING WHATSAPP ===================== -->
+    <a id="floating-whatsapp"
+        href="https://wa.me/972526969121?text=שלום%20נפאל,%20ראיתי%20את%20הפוסט%20על%20קבוצת%20ההכנה%20לכיתה%20א׳%20ואשמח%20לשמוע%20פרטים"
+        target="_blank" rel="noopener noreferrer"
+        aria-label="פתיחת WhatsApp"
+        class="pulse-whatsapp fixed bottom-6 left-6 z-50 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#25D366] hover:bg-[#1FBA59] text-white flex items-center justify-center shadow-lg transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 sm:w-8 sm:h-8" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.52 3.48A11.93 11.93 0 0012.04 0C5.4 0 .05 5.35.05 11.99c0 2.11.55 4.17 1.6 5.99L0 24l6.18-1.62a11.94 11.94 0 005.86 1.49h.01c6.63 0 11.99-5.35 11.99-11.99 0-3.2-1.25-6.21-3.52-8.4zM12.05 21.3h-.01a9.3 9.3 0 01-4.74-1.3l-.34-.2-3.67.96.98-3.58-.22-.37a9.3 9.3 0 01-1.43-4.83c0-5.14 4.18-9.32 9.33-9.32 2.49 0 4.83.97 6.59 2.73a9.27 9.27 0 012.73 6.6c0 5.14-4.18 9.31-9.32 9.31zm5.36-6.97c-.29-.15-1.74-.86-2.01-.96-.27-.1-.47-.15-.66.15-.2.29-.76.96-.93 1.15-.17.2-.34.22-.63.07-.29-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.03-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.49-.5-.66-.51l-.56-.01c-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.44s1.05 2.83 1.2 3.03c.15.2 2.07 3.17 5.02 4.45.7.3 1.25.48 1.68.62.71.23 1.35.2 1.85.12.56-.08 1.74-.71 1.99-1.4.24-.69.24-1.28.17-1.4-.07-.12-.27-.2-.56-.34z"/>
+        </svg>
+    </a>
+
+
+    <!-- ===================== SCRIPTS ===================== -->
+    <script>
+        (function () {
+            const toggle    = document.getElementById('menu-toggle');
+            const menu      = document.getElementById('mobile-menu');
+            const iconOpen  = document.getElementById('icon-open');
+            const iconClose = document.getElementById('icon-close');
+
+            function closeMenu() {
+                menu.classList.remove('open');
+                iconOpen.classList.remove('hidden');
+                iconClose.classList.add('hidden');
+                toggle.setAttribute('aria-expanded', 'false');
+                toggle.setAttribute('aria-label', 'פתיחת תפריט');
+            }
+
+            function openMenu() {
+                menu.classList.add('open');
+                iconOpen.classList.add('hidden');
+                iconClose.classList.remove('hidden');
+                toggle.setAttribute('aria-expanded', 'true');
+                toggle.setAttribute('aria-label', 'סגירת תפריט');
+            }
+
+            toggle.addEventListener('click', function () {
+                if (menu.classList.contains('open')) {
+                    closeMenu();
+                } else {
+                    openMenu();
+                }
+            });
+
+            menu.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', closeMenu);
+            });
+
+            const navbar = document.getElementById('navbar');
+            function handleScroll() {
+                if (window.scrollY > 12) {
+                    navbar.classList.add('nav-scrolled');
+                } else {
+                    navbar.classList.remove('nav-scrolled');
+                }
+            }
+            handleScroll();
+            window.addEventListener('scroll', handleScroll, { passive: true });
+
+            const yearEl = document.getElementById('year');
+            if (yearEl) {
+                yearEl.textContent = new Date().getFullYear();
+            }
+        })();
+    </script>
+
+</body>
+</html>
